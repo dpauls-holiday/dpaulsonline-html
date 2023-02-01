@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/online-logo.png">
+    <title>Package Details Single - DPauls Online</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar custom-head navbar-expand-lg bg-white shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/dpaulsonline-logo.png" class="img-fluid" alt="DPauls Online">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" id="desti-menu" href="#">Destination
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" id="exp-menu" href="#">Experiences
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-menu dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Booking
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Booking</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <div class="position-relative">
+                            <a class="nav-link cart" id="cart-menu" href="#">
+                                <img src="img/icons/cart.png" class="img-fluid" alt="">
+                                <div class="pkg-count">2</div>
+                            </a>
+                            <!-- add to cart/plan your journey package -->
+                            <div id="journey-cart" class="journey-cart">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="cart-pkg">
+                                            <div class="row gx-2">
+                                                <div class="col-md-4">
+                                                    <div class="position-relative">
+                                                        <img class="img-fluid"
+                                                            src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
+                                                            alt="">
+                                                        <div class="pkg-code">Code: 0542</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="list-details">
+                                                        <h4 class="pkg-head text-truncate">Phuket Special Package</h4>
+                                                        <p class="nights">2 Nights</p>
+                                                        <div class="includes">
+                                                            <div class="inclu-text">Includes</div>
+                                                            <img class="img-fluid" src="img/icons/hotel.png"
+                                                                title="Hotel" alt="">
+                                                            <img class="img-fluid" src="img/icons/meals.png"
+                                                                title="Meals" alt="">
+                                                            <img class="img-fluid" src="img/icons/adventure.png"
+                                                                title="Activity" alt="">
+                                                            <img class="img-fluid" src="img/icons/taxi.png"
+                                                                title="Transfers" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 d-flex justify-content-end flex-column">
+                                                    <div class="cart-rate">
+                                                        <p class="pkg-price">
+                                                            &#8377;8,999
+                                                        </p>
+                                                        <small>Per Person</small>
+                                                    </div>
+                                                    <button class="cart-del">
+                                                        <img class="img-fluid" src="img/icons/delete.png" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-pkg">
+                                            <div class="row gx-2">
+                                                <div class="col-md-4">
+                                                    <div class="position-relative">
+                                                        <img class="img-fluid"
+                                                            src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
+                                                            alt="">
+                                                        <div class="pkg-code">Code: 0542</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="list-details">
+                                                        <h4 class="pkg-head text-truncate">Phuket Special Package</h4>
+                                                        <p class="nights">2 Nights</p>
+                                                        <div class="includes">
+                                                            <div class="inclu-text">Includes</div>
+                                                            <img class="img-fluid" src="img/icons/hotel.png"
+                                                                title="Hotel" alt="">
+                                                            <img class="img-fluid" src="img/icons/meals.png"
+                                                                title="Meals" alt="">
+                                                            <img class="img-fluid" src="img/icons/adventure.png"
+                                                                title="Activity" alt="">
+                                                            <img class="img-fluid" src="img/icons/taxi.png"
+                                                                title="Transfers" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 d-flex justify-content-end flex-column">
+                                                    <div class="cart-rate">
+                                                        <p class="pkg-price">
+                                                            &#8377;8,999
+                                                        </p>
+                                                        <small>Per Person</small>
+                                                    </div>
+                                                    <button class="cart-del">
+                                                        <img class="img-fluid" src="img/icons/delete.png" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="total-cost">
+                                                Total Cost <span>&#8377; 19,998</span>
+                                            </div>
+                                            <button class="book-now">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Modal -->
+    <div id="desti-modal" class="destinations">
+        <div class="container">
+            <!-- India Holiday Destinations -->
+            <div class="row">
+                <div class="heading">
+                    <h5>India Holiday Destinations</h5>
+                    <a href="javascript:void(0)" class="view-more">view more
+                        <svg width="16" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/goa/cola-beach-south-goa-india.jpg"
+                                    alt="">
+                                <p>Goa</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/alleppey/alappuzha-beach-alleppey-kerala-india.jpg"
+                                    alt="">
+                                <p>Kerala</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/port%20blair%20-%20andaman/port-blair-jetty-andaman-india.jpg"
+                                    alt="">
+                                <p>Andaman</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/corbett/jim-corbett-park-uttarakhand-india.jpg"
+                                    alt="">
+                                <p>Uttarakhand</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <!-- International Holiday Destinations -->
+            <div class="row">
+                <div class="heading">
+                    <h5>International Holiday Destinations</h5>
+                    <a href="javascript:void(0)" class="view-more">view more
+                        <svg width="16" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/united%20arab%20emirates/dubai/atlantis-Resort-Exterior.jpg"
+                                    alt="">
+                                <p>Dubai</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/singapore/singapore%20city/sea-aquarium-shark-seas-singapore.jpg"
+                                    alt="">
+                                <p>Singapore</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/maldives/male/Paradise-Island-Resort-and-Spa-Water-Villa.jpg"
+                                    alt="">
+                                <p>Maldives</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/thailand/bangkok/chao-phraya-river-cruise-bangkok-thailand.jpg"
+                                    alt="">
+                                <p>Thailand</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/indonesia/bali/i-love-bali-inodonesia.jpg"
+                                    alt="">
+                                <p>Bali</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Holiday Experiences -->
+    <div id="exp-modal" class="experiences">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h5>Holiday Themes</h5>
+                        <a href="javascript:void(0)" class="view-more">view more
+                            <svg width="16" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="theme-outer">
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/honeymoon.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Honeymoon</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/family.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Family</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/beaches.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Beaches</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/adventure.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Adventure</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/heritage.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Heritage</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/hillstation.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Hill Station</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-md-3 bg-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb bcrumb-custom">
+                        <li class="breadcrumb-item"><a href="#">dpaulsonline</a></li>
+                        <li class="breadcrumb-item"><a href="#">Holiday Packages</a></li>
+                        <li class="breadcrumb-item"><a href="#">Thailand Packages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Phuket Special Package</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2 class="list-pkg-name text-truncate">Phuket Special Package</h2>
+                            <p>2 Nights</p>
+                        </div>
+                        <div class="price">
+                            <span>₹7,999</span>
+                            <br>
+                            <small>Per Person on Twin Sharing</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <!-- <div class="list-details incl-outer">
+                        <div class="includes">
+                            <div class="inclu-text">Includes</div>
+                            <img class="img-fluid" src="img/icons/hotel.png" title="Hotel" alt="">
+                            <img class="img-fluid" src="img/icons/meals.png" title="Meals" alt="">
+                            <img class="img-fluid" src="img/icons/adventure.png" title="Activity" alt="">
+                            <img class="img-fluid" src="img/icons/taxi.png" title="Transfers" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-9">
+                    <h4 class="list-theme-head mb-2 mb-md-4">Daywise Itinerary</h4>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="nav flex-column day-tab" id="itinenary-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <button class="nav-link active" id="itinenary-day1-tab" data-bs-toggle="pill"
+                                    data-bs-target="#itinenary-day1" type="button" role="tab"
+                                    aria-controls="itinenary-day1" aria-selected="true">Day 1</button>
+                                <button class="nav-link" id="itinenary-day2-tab" data-bs-toggle="pill"
+                                    data-bs-target="#itinenary-day2" type="button" role="tab"
+                                    aria-controls="itinenary-day2" aria-selected="true">Day 2</button>
+                                <button class="nav-link" id="itinenary-day3-tab" data-bs-toggle="pill"
+                                    data-bs-target="#itinenary-day3" type="button" role="tab"
+                                    aria-controls="itinenary-day3" aria-selected="true">Day 3</button>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="tab-content" id="itinenary-tabContent">
+                                <div class="tab-pane fade show active" id="itinenary-day1" role="tabpanel"
+                                    aria-labelledby="itinenary-day1-tab">
+                                    <!-- transfers -->
+                                    <div class="custom-card plus-next">
+                                        <div class="transfers-card">
+                                            <img class="img-fluid" src="img/icons/taxi.png" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="w-75">
+                                                <h5 class="text-truncate">Transfer Airport to Hotel</h5>
+                                                <p class="travel-date">Wed, 01 Mar 2023</p>
+                                            </div>
+                                            <button class="outline-btn">
+                                                Change to Shared
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="img-fluid" src="img/transfer-img.jpg" alt="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="list-inline daywise-des">
+                                                    <li>Private transfer</li>
+                                                    <li>2 Passengers in 1 vehicle</li>
+                                                    <li>Pickup from Airport</li>
+                                                    <li>Drop at Hotel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- hotel -->
+                                    <div class="custom-card plus-next">
+                                        <div class="transfers-card">
+                                            <img class="img-fluid" src="img/icons/hotel.png" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="w-50">
+                                                <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
+                                                <p class="htl-address text-truncate"><img src="img/icons/location.png"
+                                                        alt=""> <span>247, 1-8 Nanai Rd, Pa
+                                                        Tong, Amphoe Kathu, Phuket
+                                                        83150, Thailand</span></p>
+                                            </div>
+                                            <div class="check-in">
+                                                <span>Checkin Date:</span><br>
+                                                Wed, 01 Mar 2023
+                                            </div>
+                                            <button class="outline-btn">
+                                                Change
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="img-fluid"
+                                                    src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="col-md-5">
+                                                <ul class="list-inline daywise-des">
+                                                    <li>Check-in to Hotel <span>@2PM</span></li>
+                                                    <li>Star Category: <span>Stars</span></li>
+                                                    <li>Room Category: <span>Deluxe Room</span></li>
+                                                    <li>Meal Plan: <span>Breakfast</span></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="fw-bold">Room Amenities:</p>
+                                                <p>Elevator facility, Gym/Fitness Centre, Concierge Service, Parking
+                                                    Facility, Laundry facility, Shuttle Service, Pool accessories, Spa
+                                                    facility, Swimming Pool, Locker Facility</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- activity -->
+                                    <div class="custom-card plus-next">
+                                        <div class="transfers-card">
+                                            <img class="img-fluid" src="img/icons/adventure.png" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="w-50">
+                                                <h5 class="text-truncate">Pattaya: Coral Island-Trip with Lunch and
+                                                    activities your</h5>
+                                                <p class="htl-address text-truncate"><img src="img/icons/location.png"
+                                                        alt=""> <span>Muang Pattaya, Thailand</span> | <span>Duration: 6
+                                                        Hours</span> | <span>Wed, 01 Mar 2023</span></p>
+                                            </div>
+                                            <div class="check-in">
+                                                <span>Checkin Date:</span><br>
+                                                Wed, 01 Mar 2023
+                                            </div>
+                                            <button class="outline-btn">
+                                                Add/Change
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="img-fluid"
+                                                    src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a7/e3/f0.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="col-md-5">
+                                                <p class="fw-bold mb-2">Inclusions:</p>
+                                                <ul class="list-inline daywise-des">
+                                                    <li>Snorkeling gears</span></li>
+                                                    <li>Glass bottom boat to see coral</li>
+                                                    <li>Funny land (Water sport activity)</li>
+                                                    <li>Jet ski</li>
+                                                    <li>Banana Boat</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="fw-bold mb-2">Exclusion:</p>
+                                                <ul class="list-inline daywise-des">
+                                                    <li>Sea Walker (diving)</span></li>
+                                                    <li>Banana Boat</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- rest -->
+                                    <div class="custom-card plus-next">
+
+                                        <p class="text-center fw-bold">Rest of the night is at your own leisure.</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane fade" id="itinenary-day2" role="tabpanel"
+                                    aria-labelledby="itinenary-day2-tab">
+                                    <!-- Meals / Breakfast -->
+                                    <div class="custom-card plus-next">
+                                        <div class="transfers-card">
+                                            <img class="img-fluid" src="img/icons/meals.png" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="w-75">
+                                                <h5 class="text-truncate">Breakfast at Hotel</h5>
+                                                <p class="travel-date">Thu, 02 Mar 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- activity -->
+                                    <div class="custom-card plus-next">
+                                        <div class="transfers-card">
+                                            <img class="img-fluid" src="img/icons/adventure.png" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="w-50">
+                                                <h5 class="text-truncate">Pattaya: Coral Island-Trip with Lunch and
+                                                    activities your</h5>
+                                                <p class="htl-address text-truncate"><img src="img/icons/location.png"
+                                                        alt=""> <span>Muang Pattaya, Thailand</span> | <span>Duration: 6
+                                                        Hours</span> | <span>Wed, 01 Mar 2023</span></p>
+                                            </div>
+                                            <button class="outline-btn">
+                                                Add/Change
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="img-fluid"
+                                                    src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a7/e3/f0.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="col-md-5">
+                                                <p class="fw-bold mb-2">Inclusions:</p>
+                                                <ul class="list-inline daywise-des">
+                                                    <li>Snorkeling gears</span></li>
+                                                    <li>Glass bottom boat to see coral</li>
+                                                    <li>Funny land (Water sport activity)</li>
+                                                    <li>Jet ski</li>
+                                                    <li>Banana Boat</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="fw-bold mb-2">Exclusion:</p>
+                                                <ul class="list-inline daywise-des">
+                                                    <li>Sea Walker (diving)</span></li>
+                                                    <li>Banana Boat</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- rest -->
+                                    <div class="custom-card plus-next">
+                                        <p class="text-center fw-bold">Rest of the night is at your own leisure.</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="tab-pane fade" id="itinenary-day3" role="tabpanel"
+                                    aria-labelledby="itinenary-day3-tab">
+                                    <!-- Meals / Breakfast -->
+                                    <div class="custom-card plus-next">
+                                        <div class="transfers-card">
+                                            <img class="img-fluid" src="img/icons/meals.png" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="w-75">
+                                                <h5 class="text-truncate">Breakfast at Hotel</h5>
+                                                <p class="travel-date">Fri, 03 Mar 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- transfers -->
+                                    <div class="custom-card plus-next">
+                                        <div class="transfers-card">
+                                            <img class="img-fluid" src="img/icons/taxi.png" alt="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <div class="w-75">
+                                                <h5 class="text-truncate">Transfer Hotel to Airport</h5>
+                                                <p class="travel-date">Fri, 03 Mar 2023</p>
+                                            </div>
+                                            <button class="outline-btn">
+                                                Change to Private
+                                            </button>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img class="img-fluid" src="img/transfer-img.jpg" alt="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="list-inline daywise-des">
+                                                    <li>Private transfer</li>
+                                                    <li>2 Passengers in 1 vehicle</li>
+                                                    <li>Pickup from Airport</li>
+                                                    <li>Drop at Hotel</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- rest -->
+                                    <div class="custom-card plus-next">
+                                        <p class="text-center fw-bold">Fly to your next destination</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="custom-card position-sticky top-0">
+                        Price Summary
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="section-footer">
+        <footer class="container">
+            <div class="row gy-2">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="javascript:void(0)">
+                                        <img class="mb-2" src="img/dpaulsonline-logo.png" alt="DPauls Online">
+                                    </a>
+                                    <div class="co-details">
+                                        <p class="mb-2">
+                                            B-42, Shivalik, Malviya Nagar<br>
+                                            New Delhi 110017
+                                        </p>
+                                        <a href="tel:01166777111" class="mb-2">011 66777111</a>
+                                        <a class="mb-2"
+                                            href="mailto:contactus@dpaulsonline.com">contactus@dpaulsonline.com</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="links-head">Quick Links</h6>
+                                    <ul class="list-inline quick-links">
+                                        <li><a href="javascript:void(0)">About us</a></li>
+                                        <li><a href="javascript:void(0)">Contact us</a></li>
+                                        <li><a href="javascript:void(0)">Enquiry</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="links-head">Quick Links</h6>
+                                    <ul class="list-inline quick-links">
+                                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                        <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="links-head">Social Connect</h6>
+                            <ul class="list-inline quick-links">
+                                <li><a href="#">Facebook
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#">Instagram
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#">WhatsApp
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#">Linkedin
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <span class="py-2">© 2023 DPauls Online</span>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // Destination modal open
+        $(document).ready(function ()
+        {
+            $("#desti-menu").click(function ()
+            {
+                $("#desti-modal").toggleClass("open");
+            });
+        });
+
+        // Experience modal
+        $(document).ready(function ()
+        {
+            $("#exp-menu").click(function ()
+            {
+                $("#exp-modal").toggleClass("open");
+            });
+        });
+
+        // Open journey modal
+
+        $(document).ready(function ()
+        {
+            $("#cart-menu").click(function ()
+            {
+                $("#journey-cart").toggleClass("open");
+            });
+        });
+
+
+        // Add to you Journey cart
+        $(document).ready(function ()
+        {
+            $("#pkg-compare").click(function ()
+            {
+                $(".compare").toggleClass("d-none");
+                // $("#pkg-compare>img").css("filter", "grayscale(1)");
+                $("#pkg-compare>img").css({ 'filter': 'initial', 'filter': 'grayscale(1)' });
+                // $('#item').css({'color':'red','background':'blue'}); 
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>
