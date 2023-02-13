@@ -22,6 +22,7 @@
         rel="stylesheet" />
 
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,7 +73,7 @@
                     <li class="nav-item nav-menu">
                         <div class="position-relative">
                             <a class="nav-link cart" id="cart-menu" href="#">
-                                <img src="img/icons/cart.png" class="img-fluid" alt="">
+                                <img src="img/icons/plan-your-journey.png" class="img-fluid" alt="">
                                 <div class="pkg-count">2</div>
                             </a>
                             <!-- add to cart/plan your journey package -->
@@ -372,102 +373,202 @@
         </div>
     </div>
 
+
+    <!-- Packages in you Cart -->
     <section class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4 class="list-theme-head">Packages in you Cart</h4>
+                    <h4 class="list-theme-head">Packages in your Journey</h4>
                     <hr class="my-2 my-md-4" />
                 </div>
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="selected-pkgs">
-                                <div class="pkg-nos">1</div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="w-75">
-                                        <h5 class="fnt-16 fw-bold text-truncate m-0">Phuket Special Package</h5>
-                                        <p>2 Nights</p>
+                            <div class="position-sticky" style="top: 1.5rem">
+                                <div class="mb-3">
+                                    <div class="selected-pkgs">
+                                        <div class="pkg-nos">1</div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="w-70">
+                                                <h5 class="fnt-16 fw-bold text-truncate m-0">Phuket Special Package</h5>
+                                                <p class="fnt-14">2 Nights</p>
+                                            </div>
+                                            <div class="text-end">
+                                                <p><small>starting from</small></p>
+                                                <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-2 justify-content-end">
+                                            <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to
+                                                Your
+                                                Journey
+                                                <svg width="16" height="16" viewBox="0 0 24 24"
+                                                    style="fill: var(--fl-green)" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="text-end">
-                                        <small>starting from</small>
-                                        <div class="fnt-20 fw-bold clr-orange">₹15,999</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mt-2 justify-content-end">
-                                    <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to Your
-                                        Journey
-                                        <svg width="16" height="16" viewBox="0 0 24 24" style="fill: var(--fl-green)"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
 
-                            <div class="selected-pkgs">
-                                <div class="pkg-nos">2</div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="w-75">
-                                        <h5 class="fnt-16 fw-bold text-truncate m-0">Pattaya Special Package</h5>
-                                        <p>3 Nights</p>
+                                    <div class="selected-pkgs">
+                                        <div class="pkg-nos">2</div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="w-70">
+                                                <h5 class="fnt-16 fw-bold text-truncate m-0">Pattaya Special Package
+                                                </h5>
+                                                <p class="fnt-14">3 Nights</p>
+                                            </div>
+                                            <div class="text-end">
+                                                <p><small>starting from</small></p>
+                                                <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-2 justify-content-end">
+                                            <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to
+                                                Your
+                                                Journey
+                                                <svg width="16" height="16" viewBox="0 0 24 24"
+                                                    style="fill: var(--fl-green)" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="text-end">
-                                        <small>starting from</small>
-                                        <div class="fnt-20 fw-bold clr-orange">₹15,999</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mt-2 justify-content-end">
-                                    <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to Your
-                                        Journey
-                                        <svg width="16" height="16" viewBox="0 0 24 24" style="fill: var(--fl-green)"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
 
-                            <div class="selected-pkgs">
-                                <div class="pkg-nos">3</div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="w-75">
-                                        <h5 class="fnt-16 fw-bold text-truncate m-0">Bali Special Package</h5>
-                                        <p>2 Nights</p>
-                                    </div>
-                                    <div class="text-end">
-                                        <small>starting from</small>
-                                        <div class="fnt-20 fw-bold clr-orange">₹15,999</div>
+                                    <div class="selected-pkgs">
+                                        <div class="pkg-nos">3</div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="w-70">
+                                                <h5 class="fnt-16 fw-bold text-truncate m-0">Bali Special Package</h5>
+                                                <p class="fnt-14">2 Nights</p>
+                                            </div>
+                                            <div class="text-end">
+                                                <p><small>starting from</small></p>
+                                                <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-2 justify-content-end">
+                                            <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to
+                                                Your
+                                                Journey
+                                                <svg width="16" height="16" viewBox="0 0 24 24"
+                                                    style="fill: var(--fl-green)" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="d-flex mt-2 justify-content-end">
-                                    <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to Your
-                                        Journey
-                                        <svg width="16" height="16" viewBox="0 0 24 24" style="fill: var(--fl-green)"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
-                                            </path>
-                                        </svg>
-                                    </a>
+                                <hr class="my-3 border-0" />
+                                <div class="card rounded-0">
+                                    <div class="card-header">
+                                        <p class="fw-bold">Your Wishlist</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="wishlist-pkgs mt-0">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="w-70">
+                                                    <h5 class="fnt-16 fw-bold text-truncate m-0">Phuket Special Package
+                                                    </h5>
+                                                    <p class="fnt-14">2 Nights</p>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p><small>starting from</small></p>
+                                                    <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mt-2 justify-content-end">
+                                                <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Move
+                                                    to Journey
+                                                    <svg width="16" height="16" viewBox="0 0 24 24"
+                                                        style="fill: var(--fl-green)"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="wishlist-pkgs">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="w-70">
+                                                    <h5 class="fnt-16 fw-bold text-truncate m-0">Pattaya Special Package
+                                                    </h5>
+                                                    <p class="fnt-14">3 Nights</p>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p><small>starting from</small></p>
+                                                    <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mt-2 justify-content-end">
+                                                <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Move
+                                                    to Journey
+                                                    <svg width="16" height="16" viewBox="0 0 24 24"
+                                                        style="fill: var(--fl-green)"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="wishlist-pkgs">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="w-70">
+                                                    <h5 class="fnt-16 fw-bold text-truncate m-0">Bali Special Package
+                                                    </h5>
+                                                    <p class="fnt-14">2 Nights</p>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p><small>starting from</small></p>
+                                                    <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mt-2 justify-content-end">
+                                                <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Move
+                                                    to Journey
+                                                    <svg width="16" height="16" viewBox="0 0 24 24"
+                                                        style="fill: var(--fl-green)"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="col-md-6">
                             <div class="added-package">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <label for="">Select your Check-in Date:</label>
+
                                     <div class="custom-control">
-                                        <img src="img/icons/calendar.png" class="img-fluid" alt="">
-                                        <input type="text" class="w-100" placeholder="01 Mar 2023">
-                                        <span class="mx-2">|</span>
-                                        <input type="text" class="" placeholder="2 Adult | 1 Child | 1 Infant">
+                                        <div class="d-flex align-items-center w-50" id="dateCalendar">
+                                            <img src="img/icons/calendar.png" class="img-fluid" alt="">
+                                            <input type="text" class="form-control border-0 border-end rounded-0"
+                                                placeholder="01 Mar 2023">
+                                        </div>
+                                        <div class="d-flex" id="PaxSelect">
+                                            <input type="text" class="form-control border-0 rounded-0 w-100"
+                                                placeholder="2 Adult | 1 Child | 1 Infant">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="journey-package">
@@ -556,22 +657,31 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="mt-2">
+                                    <button class="btn btn-outline-secondary btn-sm">Add to Wishlist</button>
+                                </div>
                             </div>
 
                             <div class="added-package">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <label for="">Select your Check-in Date:</label>
+
                                     <div class="custom-control">
-                                        <img src="img/icons/calendar.png" class="img-fluid" alt="">
-                                        <input type="text" class="w-100" placeholder="04 Mar 2023">
-                                        <span class="mx-2">|</span>
-                                        <input type="text" class="" placeholder="2 Adult | 1 Child | 1 Infant">
+                                        <div class="d-flex align-items-center w-50">
+                                            <img src="img/icons/calendar.png" class="img-fluid" alt="">
+                                            <input type="text" class="form-control border-0 border-end rounded-0"
+                                                placeholder="01 Mar 2023">
+                                        </div>
+                                        <div class="d-flex" id="PaxSelect">
+                                            <input type="text" class="form-control border-0 rounded-0 w-100"
+                                                placeholder="2 Adult | 1 Child | 1 Infant">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="journey-package">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h5 class="text-truncate"><span class="night-stay">3 Nights Pattaya</span>
+                                            <h5 class="text-truncate"><span class="night-stay">2 Nights Phuket</span>
                                                 <span class="mx-2 clr-fl-green">|</span> Club Bamboo Boutique
                                                 Resort & Spa
                                             </h5>
@@ -654,22 +764,31 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="mt-2">
+                                    <button class="btn btn-outline-secondary btn-sm">Add to Wishlist</button>
+                                </div>
                             </div>
 
                             <div class="added-package">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <label for="">Select your Check-in Date:</label>
+
                                     <div class="custom-control">
-                                        <img src="img/icons/calendar.png" class="img-fluid" alt="">
-                                        <input type="text" class="w-100" placeholder="09 Mar 2023">
-                                        <span class="mx-2">|</span>
-                                        <input type="text" class="" placeholder="2 Adult | 1 Child | 1 Infant">
+                                        <div class="d-flex align-items-center w-50">
+                                            <img src="img/icons/calendar.png" class="img-fluid" alt="">
+                                            <input type="text" class="form-control border-0 border-end rounded-0"
+                                                placeholder="01 Mar 2023">
+                                        </div>
+                                        <div class="d-flex" id="PaxSelect">
+                                            <input type="text" class="form-control border-0 rounded-0 w-100"
+                                                placeholder="2 Adult | 1 Child | 1 Infant">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="journey-package">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h5 class="text-truncate"><span class="night-stay">2 Nights Bali</span>
+                                            <h5 class="text-truncate"><span class="night-stay">2 Nights Phuket</span>
                                                 <span class="mx-2 clr-fl-green">|</span> Club Bamboo Boutique
                                                 Resort & Spa
                                             </h5>
@@ -751,6 +870,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="btn btn-outline-secondary btn-sm">Add to Wishlist</button>
                                 </div>
                             </div>
 
@@ -769,7 +891,8 @@
                                             &#8377;48,996
                                         </div>
                                     </div>
-                                    <button class="book-now">Book Now</button>
+                                    <button onclick="document.location='/package-review.html'" class="book-now">Book
+                                        Now</button>
                                 </div>
                                 <div class="price-breakup">
                                     <div class="breakup-dtls">
@@ -812,265 +935,436 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Room and Pax Selection -->
+                    <div class="position-relative">
+                        <div id="SlideLeft-Pax" class="room-pax slide-out">
+                            <button class="slides-close close-btn">
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                    stroke-miterlimit="2" style="width: 30px; height: 30px;" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+                                </svg>
+                            </button>
+                            <div class="scrollbarChrome" style="height: 100vh; overflow: auto;">
+                                <div class="container">
+                                    <h5 class="fw-bolder mb-4">Room and Pax Selection</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2">Room Type</label>
+                                                <select class="form-select form-control rounded-0"
+                                                    aria-label="Select example">
+                                                    <option selected>Select Room</option>
+                                                    <option value="1">Single</option>
+                                                    <option value="2">Double</option>
+                                                    <option value="3">Tripple</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2">Adult(s) <span class="ml-1 fnt-11">(12 yrs.
+                                                        &amp; above )</span></label>
+                                                <select class="form-select form-control rounded-0"
+                                                    aria-label="Select example">
+                                                    <option selected>Select Room</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="mb-2" for="">CNB*</label>
+                                                        <select class="form-select form-control rounded-0"
+                                                            aria-label="Select example">
+                                                            <option selected>NA</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="mb-2" for="">CWB*</label>
+                                                        <select class="form-select form-control rounded-0"
+                                                            aria-label="Select example">
+                                                            <option selected>NA</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="mb-2" for="">Infant*</label>
+                                                        <select class="form-select form-control rounded-0"
+                                                            aria-label="Select example">
+                                                            <option selected>NA</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="fnt-11 mt-2">
+                                                Please select child type for best bedding preference.
+                                            </p>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <button class="proceed-to-pay">
+                                                Proceed
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="overlay" class="overlay-bg"></div>
+                    </div>
+
+                    <!-- calendar slide out -->
+                    <section>
+                        <div id="SlideLeft" class="slide-out calendar_out">
+                            <button class="slides-close close-btn">
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                    stroke-miterlimit="2" style="width: 30px; height: 30px;" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+                                </svg>
+                            </button>
+                            <div class="vdp-datepicker__calendar scrollbarChrome">
+                                <div class="vdp-datepicker__calendar-head overflow-hide">
+                                    <div class="month_block">
+                                        <header class="w-100 fw-bold text-center">February 2023
+                                        </header>
+                                        <div class=""><span class="cell day-header">Sun</span>
+                                            <span class="cell day-header" style="float: left;">Mon</span> <span
+                                                class="cell day-header" style="float: left;">Tue</span> <span
+                                                class="cell day-header" style="float: left;">Wed</span>
+                                            <span class="cell day-header" style="float: left;">Thu</span> <span
+                                                class="cell day-header" style="float: left;">Fri</span> <span
+                                                class="cell day-header" style="float: left;">Sat</span>
+                                            <span class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"><span>
+                                                    1
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    2
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    3
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    4
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    5
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    6
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    7
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    8
+                                                </span></span><span class="cell day selected"
+                                                style="float: left;"><span><span class="fare">&#8377;5399</span>
+                                                    9
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4202</span>
+                                                    10
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4152</span>
+                                                    11
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4199</span>
+                                                    12
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4199</span>
+                                                    13
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4050</span>
+                                                    14
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4096</span>
+                                                    15
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4055</span>
+                                                    16
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    17
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4201</span>
+                                                    18
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    19
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4200</span>
+                                                    20
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4234</span>
+                                                    21
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4199</span>
+                                                    22
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4096</span>
+                                                    23
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4201</span>
+                                                    24
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4201</span>
+                                                    25
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4306</span>
+                                                    26
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4306</span>
+                                                    27
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4404</span>
+                                                    28
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="month_block">
+                                        <header class="w-100 fw-bold text-center">March 2023</header>
+                                        <div class="ml-1"><span class="cell day-header">Sun</span> <span
+                                                class="cell day-header" style="float: left;">Mon</span> <span
+                                                class="cell day-header" style="float: left;">Tue</span> <span
+                                                class="cell day-header" style="float: left;">Wed</span>
+                                            <span class="cell day-header" style="float: left;">Thu</span> <span
+                                                class="cell day-header" style="float: left;">Fri</span> <span
+                                                class="cell day-header" style="float: left;">Sat</span>
+                                            <span class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    1
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4123</span>
+                                                    2
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    3
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    4
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    5
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    6
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4099</span>
+                                                    7
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4136</span>
+                                                    8
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4202</span>
+                                                    9
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    10
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4043</span>
+                                                    11
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    12
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    13
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    14
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    15
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3909</span>
+                                                    16
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4055</span>
+                                                    17
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    18
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    19
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    20
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    21
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    22
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    23
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    24
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    25
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    26
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    27
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    28
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    29
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4569</span>
+                                                    30
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;6059</span>
+                                                    31
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="month_block">
+                                        <header class="w-100 fw-bold text-center">April 2023</header>
+                                        <div class="ml-1"><span class="cell day-header">Sun</span> <span
+                                                class="cell day-header" style="float: left;">Mon</span> <span
+                                                class="cell day-header" style="float: left;">Tue</span> <span
+                                                class="cell day-header" style="float: left;">Wed</span>
+                                            <span class="cell day-header" style="float: left;">Thu</span> <span
+                                                class="cell day-header" style="float: left;">Fri</span> <span
+                                                class="cell day-header" style="float: left;">Sat</span>
+                                            <span class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    1
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4123</span>
+                                                    2
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    3
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    4
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    5
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    6
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4099</span>
+                                                    7
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4136</span>
+                                                    8
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4202</span>
+                                                    9
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    10
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4043</span>
+                                                    11
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    12
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    13
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    14
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    15
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3909</span>
+                                                    16
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4055</span>
+                                                    17
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    18
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    19
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    20
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    21
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    22
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    23
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    24
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    25
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    26
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    27
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    28
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    29
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4569</span>
+                                                    30
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;6059</span>
+                                                    31
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="overlay" class="overlay-bg"></div>
+                    </section>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- Hotel Details Slide Out -->
-    <div class="position-relative">
-        <div id="SlideLeft" class="slide-out">
-            <button class="slides-close close-btn">
-                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-                    style="width: 30px; height: 30px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
-                </svg>
-            </button>
-            <div class="scrollbarChrome" style="height: 100vh; overflow: auto;">
-                <div class="container">
-                    <h5 class="fw-bolder mb-4">Hotel Details</h5>
-                    <div class="row g-2">
-                        <div class="col-md-6">
-                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
-                        </div>
-                        <div class="col-md-3">
-                            <img class="img-fluid"
-                                src="https://cdn.dpauls.com/public/images/packages/thailand/pattaya/coral-island-tour-pattaya-thailand.jpg"
-                                alt="">
-                            <img class="img-fluid"
-                                src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
-                                alt="">
-
-                        </div>
-                        <div class="col-md-3">
-                            <img class="img-fluid"
-                                src="https://cdn.dpauls.com/public/images/packages/thailand/bangkok/chao-phraya-river-cruise-bangkok-thailand.jpg"
-                                alt="">
-                            <img class="img-fluid"
-                                src="https://cdn.dpauls.com/public/images/packages/thailand/pattaya/coral-island-tour-pattaya-thailand.jpg"
-                                alt="">
-                        </div>
-                    </div>
-
-                    <div class="mt-4">
-                        <h5 class="fw-bolder text-truncate">Club Bamboo Boutique Resort & Spa</h5>
-                        <p class="htl-address text-truncate"><img class="img-fluid" style="height: 18px;"
-                                src="img/icons/location.png" alt=""> <span>247, 1-8
-                                Nanai Rd, Pa
-                                Tong, Amphoe Kathu, Phuket
-                                83150, Thailand</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="overlay" class="overlay-bg"></div>
-    </div>
-
-    <!-- Change Hotel Slide Out -->
-    <div class="position-relative">
-        <div id="SlideLeft-Hotel" class="slide-out">
-            <button class="slides-close close-btn">
-                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-                    style="width: 30px; height: 30px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
-                </svg>
-            </button>
-            <div class="scrollbarChrome" style="height: 100vh; overflow: auto;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="change-hotel-wrap">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <div class="w-75">
-                                        <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
-                                        <p class="htl-address text-truncate"><img class="img-fluid"
-                                                style="height: 16px;" src="img/icons/location.png" alt="">
-                                            <span>247, 1-8 Nanai Rd, Pa
-                                                Tong, Amphoe Kathu, Phuket
-                                                83150, Thailand</span>
-                                        </p>
-                                    </div>
-
-                                    <button id="change-hotel" class="outline-btn">
-                                        Select
-                                    </button>
-                                </div>
-                                <div class="row gx-3">
-                                    <div class="col-md-3">
-                                        <div class="act-img-wrap">
-                                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <ul class="list-inline">
-                                            <li>Check-in to Hotel <span>@2PM</span></li>
-                                            <li>Star Category:
-                                                <span class="star-rating">
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li>Room Category: <span>Superior Room</span></li>
-                                            <li>Meal Plan: <span>Breakfast</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="change-hotel-wrap">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <div class="w-75">
-                                        <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
-                                        <p class="htl-address text-truncate"><img class="img-fluid"
-                                                style="height: 16px;" src="img/icons/location.png" alt="">
-                                            <span>247, 1-8 Nanai Rd, Pa
-                                                Tong, Amphoe Kathu, Phuket
-                                                83150, Thailand</span>
-                                        </p>
-                                    </div>
-
-                                    <button id="change-hotel" class="outline-btn">
-                                        Select
-                                    </button>
-                                </div>
-                                <div class="row gx-3">
-                                    <div class="col-md-3">
-                                        <div class="act-img-wrap">
-                                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <ul class="list-inline">
-                                            <li>Check-in to Hotel <span>@2PM</span></li>
-                                            <li>Star Category:
-                                                <span class="star-rating">
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li>Room Category: <span>Superior Room</span></li>
-                                            <li>Meal Plan: <span>Breakfast</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="change-hotel-wrap">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <div class="w-75">
-                                        <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
-                                        <p class="htl-address text-truncate"><img class="img-fluid"
-                                                style="height: 16px;" src="img/icons/location.png" alt="">
-                                            <span>247, 1-8 Nanai Rd, Pa
-                                                Tong, Amphoe Kathu, Phuket
-                                                83150, Thailand</span>
-                                        </p>
-                                    </div>
-
-                                    <button id="change-hotel" class="outline-btn">
-                                        Select
-                                    </button>
-                                </div>
-                                <div class="row gx-3">
-                                    <div class="col-md-3">
-                                        <div class="act-img-wrap">
-                                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <ul class="list-inline">
-                                            <li>Check-in to Hotel <span>@2PM</span></li>
-                                            <li>Star Category:
-                                                <span class="star-rating">
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
-                                                            fill-rule="nonzero" />
-                                                    </svg>
-                                                </span>
-                                            </li>
-                                            <li>Room Category: <span>Superior Room</span></li>
-                                            <li>Meal Plan: <span>Breakfast</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="overlay" class="overlay-bg"></div>
-    </div>
 
 
     <!-- footer -->
@@ -1198,23 +1492,10 @@
             });
         });
 
-
-        // Add to you Journey cart
+        // calendar modal
         $(document).ready(function ()
         {
-            $("#pkg-compare").click(function ()
-            {
-                $(".compare").toggleClass("d-none");
-                // $("#pkg-compare>img").css("filter", "grayscale(1)");
-                $("#pkg-compare>img").css({ 'filter': 'initial', 'filter': 'grayscale(1)' });
-                // $('#item').css({'color':'red','background':'blue'}); 
-            });
-        });
-
-        // Open hotel details
-        $(document).ready(function ()
-        {
-            $("#hotelDetails").click(function ()
+            $("#dateCalendar").click(function ()
             {
                 $("#SlideLeft").toggleClass("open");
                 $("#overlay").toggleClass("open");
@@ -1225,25 +1506,27 @@
             {
                 $("#SlideLeft").removeClass("open");
                 $("#overlay").removeClass("open");
-                $("#SlideLeft-Hotel").removeClass("open");
+
+            });
+
+        });
+
+        // Room and Pax Selection
+        $(document).ready(function ()
+        {
+            $("#PaxSelect").click(function ()
+            {
+                $("#SlideLeft-Pax").toggleClass("open");
+                $("#overlay").toggleClass("open");
+            });
+
+            $(".close-btn").click(function ()
+            {
+                $("#SlideLeft-Pax").removeClass("open");
                 $("#overlay").removeClass("open");
 
             });
         });
-
-        // Change hotel
-        $(document).ready(function ()
-        {
-            $("#change-hotel").click(function ()
-            {
-                $("#SlideLeft-Hotel").toggleClass("open");
-                $("#overlay").toggleClass("open");
-
-            });
-        });
-
-
-
 
     </script>
 </body>
