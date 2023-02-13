@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/online-logo.png">
+    <title>Plan Your Journey - DPauls Online</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        rel="stylesheet" />
+
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar custom-head navbar-expand-lg bg-white shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/dpaulsonline-logo.png" class="img-fluid" alt="DPauls Online">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" id="desti-menu" href="#">Destination
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <a class="nav-link" id="exp-menu" href="#">Experiences
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-menu dropdown">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Booking
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Booking</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-menu">
+                        <div class="position-relative">
+                            <a class="nav-link cart" id="cart-menu" href="#">
+                                <img src="img/icons/plan-your-journey.png" class="img-fluid" alt="">
+                                <div class="pkg-count">2</div>
+                            </a>
+                            <!-- add to cart/plan your journey package -->
+                            <div id="journey-cart" class="journey-cart">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="cart-pkg">
+                                            <div class="row gx-2">
+                                                <div class="col-md-4">
+                                                    <div class="position-relative">
+                                                        <img class="img-fluid"
+                                                            src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
+                                                            alt="">
+                                                        <div class="pkg-code">Code: 0542</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="list-details">
+                                                        <h4 class="pkg-head text-truncate">Phuket Special Package</h4>
+                                                        <p class="nights">2 Nights</p>
+                                                        <div class="includes">
+                                                            <div class="inclu-text">Includes</div>
+                                                            <img class="img-fluid" src="img/icons/hotel.png"
+                                                                title="Hotel" alt="">
+                                                            <img class="img-fluid" src="img/icons/meals.png"
+                                                                title="Meals" alt="">
+                                                            <img class="img-fluid" src="img/icons/adventure.png"
+                                                                title="Activity" alt="">
+                                                            <img class="img-fluid" src="img/icons/taxi.png"
+                                                                title="Transfers" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 d-flex justify-content-end flex-column">
+                                                    <div class="cart-rate">
+                                                        <p class="pkg-price">
+                                                            &#8377;8,999
+                                                        </p>
+                                                        <small>Per Person</small>
+                                                    </div>
+                                                    <button class="cart-del">
+                                                        <img class="img-fluid" src="img/icons/delete.png" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart-pkg">
+                                            <div class="row gx-2">
+                                                <div class="col-md-4">
+                                                    <div class="position-relative">
+                                                        <img class="img-fluid"
+                                                            src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
+                                                            alt="">
+                                                        <div class="pkg-code">Code: 0542</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="list-details">
+                                                        <h4 class="pkg-head text-truncate">Phuket Special Package</h4>
+                                                        <p class="nights">2 Nights</p>
+                                                        <div class="includes">
+                                                            <div class="inclu-text">Includes</div>
+                                                            <img class="img-fluid" src="img/icons/hotel.png"
+                                                                title="Hotel" alt="">
+                                                            <img class="img-fluid" src="img/icons/meals.png"
+                                                                title="Meals" alt="">
+                                                            <img class="img-fluid" src="img/icons/adventure.png"
+                                                                title="Activity" alt="">
+                                                            <img class="img-fluid" src="img/icons/taxi.png"
+                                                                title="Transfers" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 d-flex justify-content-end flex-column">
+                                                    <div class="cart-rate">
+                                                        <p class="pkg-price">
+                                                            &#8377;8,999
+                                                        </p>
+                                                        <small>Per Person</small>
+                                                    </div>
+                                                    <button class="cart-del">
+                                                        <img class="img-fluid" src="img/icons/delete.png" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="total-cost">
+                                                Total Cost <span>&#8377; 19,998</span>
+                                            </div>
+                                            <button class="book-now">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Destination Modal -->
+    <div id="desti-modal" class="destinations">
+        <div class="container">
+            <!-- India Holiday Destinations -->
+            <div class="row">
+                <div class="heading">
+                    <h5>India Holiday Destinations</h5>
+                    <a href="javascript:void(0)" class="view-more">view more
+                        <svg width="16" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/goa/cola-beach-south-goa-india.jpg"
+                                    alt="">
+                                <p>Goa</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/alleppey/alappuzha-beach-alleppey-kerala-india.jpg"
+                                    alt="">
+                                <p>Kerala</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/port%20blair%20-%20andaman/port-blair-jetty-andaman-india.jpg"
+                                    alt="">
+                                <p>Andaman</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/india/corbett/jim-corbett-park-uttarakhand-india.jpg"
+                                    alt="">
+                                <p>Uttarakhand</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <!-- International Holiday Destinations -->
+            <div class="row">
+                <div class="heading">
+                    <h5>International Holiday Destinations</h5>
+                    <a href="javascript:void(0)" class="view-more">view more
+                        <svg width="16" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                            fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/united%20arab%20emirates/dubai/atlantis-Resort-Exterior.jpg"
+                                    alt="">
+                                <p>Dubai</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/singapore/singapore%20city/sea-aquarium-shark-seas-singapore.jpg"
+                                    alt="">
+                                <p>Singapore</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/maldives/male/Paradise-Island-Resort-and-Spa-Water-Villa.jpg"
+                                    alt="">
+                                <p>Maldives</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/thailand/bangkok/chao-phraya-river-cruise-bangkok-thailand.jpg"
+                                    alt="">
+                                <p>Thailand</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:void(0)">
+                                <img class="img-fluid"
+                                    src="https://cdn.dpauls.com/public/images/packages/indonesia/bali/i-love-bali-inodonesia.jpg"
+                                    alt="">
+                                <p>Bali</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Holiday Experiences -->
+    <div id="exp-modal" class="experiences">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h5>Holiday Themes</h5>
+                        <a href="javascript:void(0)" class="view-more">view more
+                            <svg width="16" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="theme-outer">
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/honeymoon.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Honeymoon</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/family.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Family</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/beaches.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Beaches</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/adventure.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Adventure</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/heritage.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Heritage</h3>
+                        </a>
+                        <a href="javascript:void(0)" class="theme-item">
+                            <div class="theme-circle">
+                                <img class="img-fluid theme-icon" src="img/icons/hillstation.png" alt="">
+                            </div>
+                            <h3 class="theme-title">Hill Station</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-relative">
+        <img src="img/plan-your-journey-bg.jpg" alt="Plan Your Journey" class="img-fluid">
+        <div class="top-heading">
+            <h1 class="main-head">Plan Your Journey</h1>
+        </div>
+        <div class="py-md-3 bg-blue d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb bcrumb-custom">
+                            <li class="breadcrumb-item"><a href="#">dpaulsonline</a></li>
+                            <li class="breadcrumb-item"><a href="#">Holiday Packages</a></li>
+                            <li class="breadcrumb-item"><a href="#">Thailand Packages</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Plan Your Journey</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Packages in you Cart -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="list-theme-head">Packages in your Journey</h4>
+                    <hr class="my-2 my-md-4" />
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="position-sticky" style="top: 1.5rem">
+                                <div class="mb-3">
+                                    <div class="selected-pkgs">
+                                        <div class="pkg-nos">1</div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="w-70">
+                                                <h5 class="fnt-16 fw-bold text-truncate m-0">Phuket Special Package</h5>
+                                                <p class="fnt-14">2 Nights</p>
+                                            </div>
+                                            <div class="text-end">
+                                                <p><small>starting from</small></p>
+                                                <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-2 justify-content-end">
+                                            <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to
+                                                Your
+                                                Journey
+                                                <svg width="16" height="16" viewBox="0 0 24 24"
+                                                    style="fill: var(--fl-green)" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="selected-pkgs">
+                                        <div class="pkg-nos">2</div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="w-70">
+                                                <h5 class="fnt-16 fw-bold text-truncate m-0">Pattaya Special Package
+                                                </h5>
+                                                <p class="fnt-14">3 Nights</p>
+                                            </div>
+                                            <div class="text-end">
+                                                <p><small>starting from</small></p>
+                                                <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-2 justify-content-end">
+                                            <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to
+                                                Your
+                                                Journey
+                                                <svg width="16" height="16" viewBox="0 0 24 24"
+                                                    style="fill: var(--fl-green)" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="selected-pkgs">
+                                        <div class="pkg-nos">3</div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="w-70">
+                                                <h5 class="fnt-16 fw-bold text-truncate m-0">Bali Special Package</h5>
+                                                <p class="fnt-14">2 Nights</p>
+                                            </div>
+                                            <div class="text-end">
+                                                <p><small>starting from</small></p>
+                                                <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-2 justify-content-end">
+                                            <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Add to
+                                                Your
+                                                Journey
+                                                <svg width="16" height="16" viewBox="0 0 24 24"
+                                                    style="fill: var(--fl-green)" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-3 border-0" />
+                                <div class="card rounded-0">
+                                    <div class="card-header">
+                                        <p class="fw-bold">Your Wishlist</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="wishlist-pkgs mt-0">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="w-70">
+                                                    <h5 class="fnt-16 fw-bold text-truncate m-0">Phuket Special Package
+                                                    </h5>
+                                                    <p class="fnt-14">2 Nights</p>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p><small>starting from</small></p>
+                                                    <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mt-2 justify-content-end">
+                                                <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Move
+                                                    to Journey
+                                                    <svg width="16" height="16" viewBox="0 0 24 24"
+                                                        style="fill: var(--fl-green)"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="wishlist-pkgs">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="w-70">
+                                                    <h5 class="fnt-16 fw-bold text-truncate m-0">Pattaya Special Package
+                                                    </h5>
+                                                    <p class="fnt-14">3 Nights</p>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p><small>starting from</small></p>
+                                                    <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mt-2 justify-content-end">
+                                                <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Move
+                                                    to Journey
+                                                    <svg width="16" height="16" viewBox="0 0 24 24"
+                                                        style="fill: var(--fl-green)"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="wishlist-pkgs">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="w-70">
+                                                    <h5 class="fnt-16 fw-bold text-truncate m-0">Bali Special Package
+                                                    </h5>
+                                                    <p class="fnt-14">2 Nights</p>
+                                                </div>
+                                                <div class="text-end">
+                                                    <p><small>starting from</small></p>
+                                                    <div class="fnt-18 fw-bold clr-orange">₹15,999</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex mt-2 justify-content-end">
+                                                <a href="javascript:void(0)" class="view-more fnt-14 clr-fl-green">Move
+                                                    to Journey
+                                                    <svg width="16" height="16" viewBox="0 0 24 24"
+                                                        style="fill: var(--fl-green)"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="added-package">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="">Select your Check-in Date:</label>
+
+                                    <div class="custom-control">
+                                        <div class="d-flex align-items-center w-50">
+                                            <img src="img/icons/calendar.png" class="img-fluid" alt="">
+                                            <input type="text" class="form-control border-0 border-end rounded-0"
+                                                placeholder="01 Mar 2023">
+                                        </div>
+                                        <div class="d-flex" id="PaxSelect">
+                                            <input type="text" class="form-control border-0 rounded-0 w-100"
+                                                placeholder="2 Adult | 1 Child | 1 Infant">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="journey-package">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h5 class="text-truncate"><span class="night-stay">2 Nights Phuket</span>
+                                                <span class="mx-2 clr-fl-green">|</span> Club Bamboo Boutique
+                                                Resort & Spa
+                                            </h5>
+                                            <p class="fnt-14 text-truncate"><img class="img-fluid"
+                                                    src="img/icons/location.png" alt="" />
+                                                <span>247, 1-8 Nanai Rd, Pa
+                                                    Tong, Amphoe Kathu, Phuket
+                                                    83150, Thailand</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div type="button" id="hotelDetails" onclick="">
+                                                        <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="mb-2">
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Check-in to Hotel <span>@2PM</span></li>
+                                                            <li>Star Category:
+                                                                <span class="star-rating">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                </span>
+                                                            </li>
+                                                            <li>Room Category: <span>Deluxe Room</span></li>
+                                                            <li>Meal Plan: <span>Breakfast</span></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="">
+                                                            <small>starting from</small>
+                                                            <div class="fnt-20 fw-bold clr-orange">₹15,999</div>
+                                                        </div>
+                                                        <a href="package-details.html"
+                                                            class="view-more fnt-14 clr-fl-green">More Details
+                                                            <svg width="16" height="16" viewBox="0 0 24 24"
+                                                                style="fill: var(--fl-green)"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="btn btn-outline-secondary btn-sm">Add to Wishlist</button>
+                                </div>
+                            </div>
+
+                            <div class="added-package">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="">Select your Check-in Date:</label>
+
+                                    <div class="custom-control">
+                                        <div class="d-flex align-items-center w-50">
+                                            <img src="img/icons/calendar.png" class="img-fluid" alt="">
+                                            <input type="text" class="form-control border-0 border-end rounded-0"
+                                                placeholder="01 Mar 2023">
+                                        </div>
+                                        <div class="d-flex" id="PaxSelect">
+                                            <input type="text" class="form-control border-0 rounded-0 w-100"
+                                                placeholder="2 Adult | 1 Child | 1 Infant">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="journey-package">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h5 class="text-truncate"><span class="night-stay">2 Nights Phuket</span>
+                                                <span class="mx-2 clr-fl-green">|</span> Club Bamboo Boutique
+                                                Resort & Spa
+                                            </h5>
+                                            <p class="fnt-14 text-truncate"><img class="img-fluid"
+                                                    src="img/icons/location.png" alt="" />
+                                                <span>247, 1-8 Nanai Rd, Pa
+                                                    Tong, Amphoe Kathu, Phuket
+                                                    83150, Thailand</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div type="button" id="hotelDetails" onclick="">
+                                                        <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="mb-2">
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Check-in to Hotel <span>@2PM</span></li>
+                                                            <li>Star Category:
+                                                                <span class="star-rating">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                </span>
+                                                            </li>
+                                                            <li>Room Category: <span>Deluxe Room</span></li>
+                                                            <li>Meal Plan: <span>Breakfast</span></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="">
+                                                            <small>starting from</small>
+                                                            <div class="fnt-20 fw-bold clr-orange">₹15,999</div>
+                                                        </div>
+                                                        <a href="package-details.html"
+                                                            class="view-more fnt-14 clr-fl-green">More Details
+                                                            <svg width="16" height="16" viewBox="0 0 24 24"
+                                                                style="fill: var(--fl-green)"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="btn btn-outline-secondary btn-sm">Add to Wishlist</button>
+                                </div>
+                            </div>
+
+                            <div class="added-package">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="">Select your Check-in Date:</label>
+
+                                    <div class="custom-control">
+                                        <div class="d-flex align-items-center w-50">
+                                            <img src="img/icons/calendar.png" class="img-fluid" alt="">
+                                            <input type="text" class="form-control border-0 border-end rounded-0"
+                                                placeholder="01 Mar 2023">
+                                        </div>
+                                        <div class="d-flex" id="PaxSelect">
+                                            <input type="text" class="form-control border-0 rounded-0 w-100"
+                                                placeholder="2 Adult | 1 Child | 1 Infant">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="journey-package">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h5 class="text-truncate"><span class="night-stay">2 Nights Phuket</span>
+                                                <span class="mx-2 clr-fl-green">|</span> Club Bamboo Boutique
+                                                Resort & Spa
+                                            </h5>
+                                            <p class="fnt-14 text-truncate"><img class="img-fluid"
+                                                    src="img/icons/location.png" alt="" />
+                                                <span>247, 1-8 Nanai Rd, Pa
+                                                    Tong, Amphoe Kathu, Phuket
+                                                    83150, Thailand</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div type="button" id="hotelDetails" onclick="">
+                                                        <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <div class="mb-2">
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Check-in to Hotel <span>@2PM</span></li>
+                                                            <li>Star Category:
+                                                                <span class="star-rating">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                </span>
+                                                            </li>
+                                                            <li>Room Category: <span>Deluxe Room</span></li>
+                                                            <li>Meal Plan: <span>Breakfast</span></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="">
+                                                            <small>starting from</small>
+                                                            <div class="fnt-20 fw-bold clr-orange">₹15,999</div>
+                                                        </div>
+                                                        <a href="package-details.html"
+                                                            class="view-more fnt-14 clr-fl-green">More Details
+                                                            <svg width="16" height="16" viewBox="0 0 24 24"
+                                                                style="fill: var(--fl-green)"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z">
+                                                                </path>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <button class="btn btn-outline-secondary btn-sm">Add to Wishlist</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Price Summary -->
+                        <div class="col-md-3">
+                            <div class="custom-card p-2 position-sticky" style="top: 1rem;">
+                                <p class="summary-heading">Journey Summary</p>
+
+                                <div class="mb-3 d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <small>Total Package Cost</small>
+                                        <div class="total-price">
+                                            &#8377;48,996
+                                        </div>
+                                    </div>
+                                    <button onclick="document.location='/package-review.html'" class="book-now">Book
+                                        Now</button>
+                                </div>
+                                <div class="price-breakup">
+                                    <div class="breakup-dtls">
+                                        <p>Pattaya (2 Nights)</p>
+                                        <p class="total-cost">&#8377;15,999</p>
+                                    </div>
+                                    <div class="breakup-dtls">
+                                        <p>Phuket (3 Nights)</p>
+                                        <p class="total-cost">&#8377;15,999</p>
+                                    </div>
+                                    <div class="breakup-dtls">
+                                        <p>Bali (2 Nights)</p>
+                                        <p class="total-cost">&#8377;15,999</p>
+                                    </div>
+                                    <div class="breakup-dtls">
+                                        <p>GST</p>
+                                        <p class="total-cost">&#8377;999</p>
+                                    </div>
+                                    <div class="breakup-dtls">
+                                        <p>Payable Amount</p>
+                                        <p class="total-cost">&#8377;48,996</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="callback-btn">
+                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M3.848 19h-.848c-.796 0-1.559-.316-2.121-.879-.563-.562-.879-1.325-.879-2.121v-3c0-7.175 5.377-13 12-13s12 5.825 12 13v3c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879h-.848c-2.69 4.633-6.904 5-8.152 5-1.248 0-5.462-.367-8.152-5zm16.152-5.876c-.601.236-1.269-.18-1.269-.797 0-.304-.022-.61-.053-.915-1.761-.254-3.618-1.926-3.699-3.723-1.315 2.005-4.525 4.17-7.044 4.17 1.086-.699 1.839-2.773 1.903-3.508-.581 1.092-2.898 3.136-4.551 3.487l-.018.489c0 .619-.669 1.032-1.269.797v3.771c.287.256.632.464 1.041.594.225.072.412.224.521.424 2.206 4.046 5.426 4.087 6.438 4.087.929 0 3.719-.035 5.877-3.169-1.071.433-2.265.604-3.759.653-.37.6-1.18 1.016-2.118 1.016-1.288 0-2.333-.784-2.333-1.75s1.045-1.75 2.333-1.75c.933 0 1.738.411 2.112 1.005 1.9-.026 4.336-.334 5.888-2.645v-2.236zm-11-.624c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm6 0c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm5.478-1.5h1.357c-.856-5.118-4.937-9-9.835-9-4.898 0-8.979 3.882-9.835 9h1.357c.52-4.023 3.411-7.722 8.478-7.722s7.958 3.699 8.478 7.722z" />
+                                        </svg>
+                                        Call Back</button>
+                                    <button class="add-journey-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M19 9.062s-5.188-.333-7 1.938c2-4.896 7-5.938 7-5.938v-2l5 4-5 4.019v-2.019zm-18.974 14.938h23.947l-11.973-11.607-11.974 11.607zm1.673-14l10.291-7.488 3.053 2.218c.712-.459 1.391-.805 1.953-1.054l-5.006-3.637-11.99 8.725v12.476l7.352-7.127-5.653-4.113zm15.753 4.892l6.548 6.348v-11.612l-6.548 5.264z" />
+                                        </svg>
+                                        Email Quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room and Pax Selection -->
+                    <div class="position-relative">
+                        <div id="SlideLeft-Pax" class="room-pax slide-out">
+                            <button class="slides-close close-btn">
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                    stroke-miterlimit="2" style="width: 30px; height: 30px;" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+                                </svg>
+                            </button>
+                            <div class="scrollbarChrome" style="height: 100vh; overflow: auto;">
+                                <div class="container">
+                                    <h5 class="fw-bolder mb-4">Room and Pax Selection</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2">Room Type</label>
+                                                <select class="form-select form-control rounded-0"
+                                                    aria-label="Select example">
+                                                    <option selected>Select Room</option>
+                                                    <option value="1">Single</option>
+                                                    <option value="2">Double</option>
+                                                    <option value="3">Tripple</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="mb-2">Adult(s) <span class="ml-1 fnt-11">(12 yrs.
+                                                        &amp; above )</span></label>
+                                                <select class="form-select form-control rounded-0"
+                                                    aria-label="Select example">
+                                                    <option selected>Select Room</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="mb-2" for="">CNB*</label>
+                                                        <select class="form-select form-control rounded-0"
+                                                            aria-label="Select example">
+                                                            <option selected>NA</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="mb-2" for="">CWB*</label>
+                                                        <select class="form-select form-control rounded-0"
+                                                            aria-label="Select example">
+                                                            <option selected>NA</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="mb-2" for="">Infant*</label>
+                                                        <select class="form-select form-control rounded-0"
+                                                            aria-label="Select example">
+                                                            <option selected>NA</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="fnt-11 mt-2">
+                                                Please select child type for best bedding preference.
+                                            </p>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <button class="proceed-to-pay">
+                                                Proceed
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="overlay" class="overlay-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="section-footer">
+        <footer class="container">
+            <div class="row gy-2">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="javascript:void(0)">
+                                        <img class="mb-2" src="img/dpaulsonline-logo.png" alt="DPauls Online">
+                                    </a>
+                                    <div class="co-details">
+                                        <p class="mb-2">
+                                            B-42, Shivalik, Malviya Nagar<br>
+                                            New Delhi 110017
+                                        </p>
+                                        <a href="tel:01166777111" class="mb-2">011 66777111</a>
+                                        <a class="mb-2"
+                                            href="mailto:contactus@dpaulsonline.com">contactus@dpaulsonline.com</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="links-head">Quick Links</h6>
+                                    <ul class="list-inline quick-links">
+                                        <li><a href="javascript:void(0)">About us</a></li>
+                                        <li><a href="javascript:void(0)">Contact us</a></li>
+                                        <li><a href="javascript:void(0)">Enquiry</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="links-head">Quick Links</h6>
+                                    <ul class="list-inline quick-links">
+                                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                        <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="links-head">Social Connect</h6>
+                            <ul class="list-inline quick-links">
+                                <li><a href="#">Facebook
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#">Instagram
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#">WhatsApp
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                                <li><a href="#">Linkedin
+                                        <svg width="14" height="14" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <span class="py-2">© 2023 DPauls Online</span>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // Destination modal open
+        $(document).ready(function ()
+        {
+            $("#desti-menu").click(function ()
+            {
+                $("#desti-modal").toggleClass("open");
+            });
+        });
+
+        // Experience modal
+        $(document).ready(function ()
+        {
+            $("#exp-menu").click(function ()
+            {
+                $("#exp-modal").toggleClass("open");
+            });
+        });
+
+        // Open journey modal
+
+        $(document).ready(function ()
+        {
+            $("#cart-menu").click(function ()
+            {
+                $("#journey-cart").toggleClass("open");
+            });
+        });
+
+        // Room and Pax Selection
+        $(document).ready(function ()
+        {
+            $("#PaxSelect").click(function ()
+            {
+                $("#SlideLeft-Pax").toggleClass("open");
+                $("#overlay").toggleClass("open");
+            });
+
+            $(".close-btn").click(function ()
+            {
+                $("#SlideLeft-Pax").removeClass("open");
+                $("#overlay").removeClass("open");
+
+            });
+        });
+
+    </script>
+</body>
+
+</html>

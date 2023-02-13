@@ -72,7 +72,7 @@
                     <li class="nav-item nav-menu">
                         <div class="position-relative">
                             <a class="nav-link cart" id="cart-menu" href="#">
-                                <img src="img/icons/cart.png" class="img-fluid" alt="">
+                                <img src="img/icons/plan-your-journey.png" class="img-fluid" alt="">
                                 <div class="pkg-count">2</div>
                             </a>
                             <!-- add to cart/plan your journey package -->
@@ -165,7 +165,8 @@
                                             <div class="total-cost">
                                                 Total Cost <span>&#8377; 19,998</span>
                                             </div>
-                                            <button class="book-now">Book Now</button>
+                                            <button onclick="document.location='/plan-your-journey.html'"
+                                                class="book-now">Book Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -351,7 +352,7 @@
         </div>
     </div>
 
-    <section class="py-md-3 bg-blue">
+    <section class="py-md-3 bg-blue d-none d-md-block">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -375,15 +376,14 @@
                             <h2 class="list-pkg-name text-truncate">Phuket Special Package</h2>
                             <p>2 Nights</p>
                         </div>
-                        <div class="price">
-                            <span>₹7,999</span>
-                            <br>
+                        <div>
+                            <div class="total-price clr-orange">₹7,999</div>
                             <small>Per Person on Twin Sharing</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <!-- <div class="list-details incl-outer">
+                    <div class="list-details incl-outer">
                         <div class="includes">
                             <div class="inclu-text">Includes</div>
                             <img class="img-fluid" src="img/icons/hotel.png" title="Hotel" alt="">
@@ -391,289 +391,645 @@
                             <img class="img-fluid" src="img/icons/adventure.png" title="Activity" alt="">
                             <img class="img-fluid" src="img/icons/taxi.png" title="Transfers" alt="">
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <hr class="my-4">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <h4 class="list-theme-head mb-2 mb-md-4">Daywise Itinerary</h4>
+                </div>
+                <div class="col-md-9">
                     <div class="row">
                         <div class="col-md-2">
-                            <div class="nav flex-column day-tab" id="itinenary-tab" role="tablist"
-                                aria-orientation="vertical">
-                                <button class="nav-link active" id="itinenary-day1-tab" data-bs-toggle="pill"
-                                    data-bs-target="#itinenary-day1" type="button" role="tab"
-                                    aria-controls="itinenary-day1" aria-selected="true">Day 1</button>
-                                <button class="nav-link" id="itinenary-day2-tab" data-bs-toggle="pill"
-                                    data-bs-target="#itinenary-day2" type="button" role="tab"
-                                    aria-controls="itinenary-day2" aria-selected="true">Day 2</button>
-                                <button class="nav-link" id="itinenary-day3-tab" data-bs-toggle="pill"
-                                    data-bs-target="#itinenary-day3" type="button" role="tab"
-                                    aria-controls="itinenary-day3" aria-selected="true">Day 3</button>
+                            <div class="position-sticky" style="top: 1rem;">
+                                <div class="nav flex-column day-tab" id="itinenary-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <button class="nav-link active" id="itinenary-day1-tab" data-bs-toggle="pill"
+                                        data-bs-target="#itinenary-day1" type="button" role="tab"
+                                        aria-controls="itinenary-day1" aria-selected="true">Day 1</button>
+                                    <button class="nav-link" id="itinenary-day2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#itinenary-day2" type="button" role="tab"
+                                        aria-controls="itinenary-day2" aria-selected="true">Day 2</button>
+                                    <button class="nav-link" id="itinenary-day3-tab" data-bs-toggle="pill"
+                                        data-bs-target="#itinenary-day3" type="button" role="tab"
+                                        aria-controls="itinenary-day3" aria-selected="true">Day 3</button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-10">
-                            <div class="tab-content" id="itinenary-tabContent">
-                                <div class="tab-pane fade show active" id="itinenary-day1" role="tabpanel"
-                                    aria-labelledby="itinenary-day1-tab">
-                                    <!-- transfers -->
-                                    <div class="custom-card plus-next">
-                                        <div class="transfers-card">
-                                            <img class="img-fluid" src="img/icons/taxi.png" alt="">
+                            <div class="position-sticky" style="top: 1rem;">
+                                <div class="tab-content" id="itinenary-tabContent">
+                                    <div class="tab-pane fade show active" id="itinenary-day1" role="tabpanel"
+                                        aria-labelledby="itinenary-day1-tab">
+                                        <!-- transfers -->
+                                        <div class="custom-card plus-next">
+                                            <div class="transfers-card">
+                                                <img class="img-fluid" src="img/icons/taxi.png" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="w-75">
+                                                    <h5 class="text-truncate">Transfer Airport to Hotel</h5>
+                                                    <p class="travel-date">Wed, 01 Mar 2023</p>
+                                                </div>
+                                                <button class="outline-btn">
+                                                    Change to Shared
+                                                </button>
+                                            </div>
+                                            <div class="row gx-3">
+                                                <div class="col-md-3">
+                                                    <img class="img-fluid" src="img/transfer-img.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="scrollbarChrome content-wrap">
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Private transfer</li>
+                                                            <li>2 Passengers in 1 vehicle</li>
+                                                            <li>Pickup from Airport</li>
+                                                            <li>Drop at Hotel</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <div class="w-75">
-                                                <h5 class="text-truncate">Transfer Airport to Hotel</h5>
-                                                <p class="travel-date">Wed, 01 Mar 2023</p>
+
+                                        <!-- hotel -->
+                                        <div class="custom-card plus-next">`
+                                            <div class="transfers-card">
+                                                <img class="img-fluid" src="img/icons/hotel.png" alt="">
                                             </div>
-                                            <button class="outline-btn">
-                                                Change to Shared
-                                            </button>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="w-50">
+                                                    <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
+                                                    <p class="htl-address text-truncate"><img
+                                                            src="img/icons/location.png" alt=""> <span>247, 1-8 Nanai
+                                                            Rd, Pa
+                                                            Tong, Amphoe Kathu, Phuket
+                                                            83150, Thailand</span></p>
+                                                </div>
+                                                <div class="check-in">
+                                                    <span>Checkin Date:</span><br>
+                                                    Wed, 01 Mar 2023
+                                                </div>
+                                                <button id="change-hotel" class="outline-btn">
+                                                    Change
+                                                </button>
+                                            </div>
+                                            <div class="row gx-3">
+                                                <div class="col-md-3">
+                                                    <div type="button" id="hotelDetails" onclick="">
+                                                        <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="scrollbarChrome content-wrap">
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Check-in to Hotel <span>@2PM</span></li>
+                                                            <li>Star Category:
+                                                                <span class="star-rating">
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                    <svg viewBox="0 0 24 24"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                                            fill-rule="nonzero" />
+                                                                    </svg>
+                                                                </span>
+                                                            </li>
+                                                            <li>Room Category: <span>Deluxe Room</span></li>
+                                                            <li>Meal Plan: <span>Breakfast</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="scrollbarChrome">
+                                                        <p class="fw-bold mb-2">Room Amenities:</p>
+                                                        <p class="fnt-12">Elevator facility, Gym/Fitness Centre,
+                                                            Concierge
+                                                            Service, Parking
+                                                            Facility, Laundry facility, Shuttle Service, Pool
+                                                            accessories,
+                                                            Spa
+                                                            facility, Swimming Pool, Locker Facility</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid" src="img/transfer-img.jpg" alt="">
+
+                                        <!-- activity -->
+                                        <div class="custom-card plus-next">
+                                            <div class="transfers-card">
+                                                <img class="img-fluid" src="img/icons/adventure.png" alt="">
                                             </div>
-                                            <div class="col-md-6">
-                                                <ul class="list-inline daywise-des">
-                                                    <li>Private transfer</li>
-                                                    <li>2 Passengers in 1 vehicle</li>
-                                                    <li>Pickup from Airport</li>
-                                                    <li>Drop at Hotel</li>
-                                                </ul>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="w-75">
+                                                    <h5 class="text-truncate">Pattaya: Coral Island-Trip with Lunch and
+                                                        activities your</h5>
+                                                    <p class="htl-address text-truncate"><img
+                                                            src="img/icons/location.png" alt=""> <span>Muang Pattaya,
+                                                            Thailand</span> | <span>Duration: 6
+                                                            Hours</span> | <span>Wed, 01 Mar 2023</span></p>
+                                                </div>
+                                                <button class="outline-btn">
+                                                    Add/Change
+                                                </button>
                                             </div>
+                                            <div class="row gx-3">
+                                                <div class="col-md-3">
+                                                    <div class="act-img-wrap">
+                                                        <img class="img-fluid"
+                                                            src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a7/e3/f0.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="scrollbarChrome content-wrap">
+                                                        <p class="fw-bold mb-2">Inclusions:</p>
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Snorkeling gears</span></li>
+                                                            <li>Glass bottom boat to see coral</li>
+                                                            <li>Funny land (Water sport activity)</li>
+                                                            <li>Jet ski</li>
+                                                            <li>Banana Boat</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="scrollbarChrome content-wrap">
+                                                        <p class="fw-bold mb-2">Exclusion:</p>
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Sea Walker (diving)</span></li>
+                                                            <li>Banana Boat</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- rest -->
+                                        <div class="custom-card plus-next">
+                                            <p class="text-center fw-bold">Rest of the night is at your own
+                                                leisure.</span>
+                                            </p>
                                         </div>
                                     </div>
 
-                                    <!-- hotel -->
-                                    <div class="custom-card plus-next">
-                                        <div class="transfers-card">
-                                            <img class="img-fluid" src="img/icons/hotel.png" alt="">
+
+                                    <div class="tab-pane fade" id="itinenary-day2" role="tabpanel"
+                                        aria-labelledby="itinenary-day2-tab">
+                                        <!-- Meals / Breakfast -->
+                                        <div class="custom-card plus-next">
+                                            <div class="transfers-card">
+                                                <img class="img-fluid" src="img/icons/meals.png" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="w-75">
+                                                    <h5 class="text-truncate">Breakfast at Hotel</h5>
+                                                    <p class="travel-date">Thu, 02 Mar 2023</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <div class="w-50">
-                                                <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
-                                                <p class="htl-address text-truncate"><img src="img/icons/location.png"
-                                                        alt=""> <span>247, 1-8 Nanai Rd, Pa
-                                                        Tong, Amphoe Kathu, Phuket
-                                                        83150, Thailand</span></p>
+
+                                        <!-- activity -->
+                                        <div class="custom-card plus-next">
+                                            <div class="transfers-card">
+                                                <img class="img-fluid" src="img/icons/adventure.png" alt="">
                                             </div>
-                                            <div class="check-in">
-                                                <span>Checkin Date:</span><br>
-                                                Wed, 01 Mar 2023
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="w-75">
+                                                    <h5 class="text-truncate">Pattaya: Coral Island-Trip with Lunch and
+                                                        activities your</h5>
+                                                    <p class="htl-address text-truncate"><img
+                                                            src="img/icons/location.png" alt=""> <span>Muang Pattaya,
+                                                            Thailand</span> | <span>Duration: 6
+                                                            Hours</span> | <span>Wed, 01 Mar 2023</span></p>
+                                                </div>
+                                                <button class="outline-btn">
+                                                    Add/Change
+                                                </button>
                                             </div>
-                                            <button class="outline-btn">
-                                                Change
-                                            </button>
+                                            <div class="row gx-3">
+                                                <div class="col-md-3">
+                                                    <div class="act-img-wrap">
+                                                        <img class="img-fluid"
+                                                            src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a7/e3/f0.jpg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="scrollbarChrome content-wrap">
+                                                        <p class="fw-bold mb-2">Inclusions:</p>
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Snorkeling gears</span></li>
+                                                            <li>Glass bottom boat to see coral</li>
+                                                            <li>Funny land (Water sport activity)</li>
+                                                            <li>Jet ski</li>
+                                                            <li>Banana Boat</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="scrollbarChrome content-wrap">
+                                                        <p class="fw-bold mb-2">Exclusion:</p>
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Sea Walker (diving)</span></li>
+                                                            <li>Banana Boat</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid"
-                                                    src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
-                                                    alt="">
-                                            </div>
-                                            <div class="col-md-5">
-                                                <ul class="list-inline daywise-des">
-                                                    <li>Check-in to Hotel <span>@2PM</span></li>
-                                                    <li>Star Category: <span>Stars</span></li>
-                                                    <li>Room Category: <span>Deluxe Room</span></li>
-                                                    <li>Meal Plan: <span>Breakfast</span></li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <p class="fw-bold">Room Amenities:</p>
-                                                <p>Elevator facility, Gym/Fitness Centre, Concierge Service, Parking
-                                                    Facility, Laundry facility, Shuttle Service, Pool accessories, Spa
-                                                    facility, Swimming Pool, Locker Facility</p>
-                                            </div>
+
+                                        <!-- rest -->
+                                        <div class="custom-card plus-next">
+                                            <p class="text-center fw-bold">Rest of the night is at your own
+                                                leisure.</span>
+                                            </p>
                                         </div>
                                     </div>
 
-                                    <!-- activity -->
-                                    <div class="custom-card plus-next">
-                                        <div class="transfers-card">
-                                            <img class="img-fluid" src="img/icons/adventure.png" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <div class="w-50">
-                                                <h5 class="text-truncate">Pattaya: Coral Island-Trip with Lunch and
-                                                    activities your</h5>
-                                                <p class="htl-address text-truncate"><img src="img/icons/location.png"
-                                                        alt=""> <span>Muang Pattaya, Thailand</span> | <span>Duration: 6
-                                                        Hours</span> | <span>Wed, 01 Mar 2023</span></p>
-                                            </div>
-                                            <div class="check-in">
-                                                <span>Checkin Date:</span><br>
-                                                Wed, 01 Mar 2023
-                                            </div>
-                                            <button class="outline-btn">
-                                                Add/Change
-                                            </button>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid"
-                                                    src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a7/e3/f0.jpg"
-                                                    alt="">
-                                            </div>
-                                            <div class="col-md-5">
-                                                <p class="fw-bold mb-2">Inclusions:</p>
-                                                <ul class="list-inline daywise-des">
-                                                    <li>Snorkeling gears</span></li>
-                                                    <li>Glass bottom boat to see coral</li>
-                                                    <li>Funny land (Water sport activity)</li>
-                                                    <li>Jet ski</li>
-                                                    <li>Banana Boat</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <p class="fw-bold mb-2">Exclusion:</p>
-                                                <ul class="list-inline daywise-des">
-                                                    <li>Sea Walker (diving)</span></li>
-                                                    <li>Banana Boat</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <!-- rest -->
-                                    <div class="custom-card plus-next">
-
-                                        <p class="text-center fw-bold">Rest of the night is at your own leisure.</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="tab-pane fade" id="itinenary-day2" role="tabpanel"
-                                    aria-labelledby="itinenary-day2-tab">
-                                    <!-- Meals / Breakfast -->
-                                    <div class="custom-card plus-next">
-                                        <div class="transfers-card">
-                                            <img class="img-fluid" src="img/icons/meals.png" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <div class="w-75">
-                                                <h5 class="text-truncate">Breakfast at Hotel</h5>
-                                                <p class="travel-date">Thu, 02 Mar 2023</p>
+                                    <div class="tab-pane fade" id="itinenary-day3" role="tabpanel"
+                                        aria-labelledby="itinenary-day3-tab">
+                                        <!-- Meals / Breakfast -->
+                                        <div class="custom-card plus-next">
+                                            <div class="transfers-card">
+                                                <img class="img-fluid" src="img/icons/meals.png" alt="">
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="w-75">
+                                                    <h5 class="text-truncate">Breakfast at Hotel</h5>
+                                                    <p class="travel-date">Fri, 03 Mar 2023</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- activity -->
-                                    <div class="custom-card plus-next">
-                                        <div class="transfers-card">
-                                            <img class="img-fluid" src="img/icons/adventure.png" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <div class="w-50">
-                                                <h5 class="text-truncate">Pattaya: Coral Island-Trip with Lunch and
-                                                    activities your</h5>
-                                                <p class="htl-address text-truncate"><img src="img/icons/location.png"
-                                                        alt=""> <span>Muang Pattaya, Thailand</span> | <span>Duration: 6
-                                                        Hours</span> | <span>Wed, 01 Mar 2023</span></p>
+                                        <!-- transfers -->
+                                        <div class="custom-card plus-next">
+                                            <div class="transfers-card">
+                                                <img class="img-fluid" src="img/icons/taxi.png" alt="">
                                             </div>
-                                            <button class="outline-btn">
-                                                Add/Change
-                                            </button>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid"
-                                                    src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/a7/e3/f0.jpg"
-                                                    alt="">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <div class="w-75">
+                                                    <h5 class="text-truncate">Transfer Hotel to Airport</h5>
+                                                    <p class="travel-date">Fri, 03 Mar 2023</p>
+                                                </div>
+                                                <button class="outline-btn">
+                                                    Change to Private
+                                                </button>
                                             </div>
-                                            <div class="col-md-5">
-                                                <p class="fw-bold mb-2">Inclusions:</p>
-                                                <ul class="list-inline daywise-des">
-                                                    <li>Snorkeling gears</span></li>
-                                                    <li>Glass bottom boat to see coral</li>
-                                                    <li>Funny land (Water sport activity)</li>
-                                                    <li>Jet ski</li>
-                                                    <li>Banana Boat</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <p class="fw-bold mb-2">Exclusion:</p>
-                                                <ul class="list-inline daywise-des">
-                                                    <li>Sea Walker (diving)</span></li>
-                                                    <li>Banana Boat</li>
-                                                </ul>
+                                            <div class="row gx-3">
+                                                <div class="col-md-3">
+                                                    <img class="img-fluid" src="img/transfer-img.jpg" alt="">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="scrollbarChrome content-wrap">
+                                                        <ul class="list-inline daywise-des">
+                                                            <li>Private transfer</li>
+                                                            <li>2 Passengers in 1 vehicle</li>
+                                                            <li>Pickup from Airport</li>
+                                                            <li>Drop at Hotel</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- rest -->
-                                    <div class="custom-card plus-next">
-                                        <p class="text-center fw-bold">Rest of the night is at your own leisure.</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-
-                                <div class="tab-pane fade" id="itinenary-day3" role="tabpanel"
-                                    aria-labelledby="itinenary-day3-tab">
-                                    <!-- Meals / Breakfast -->
-                                    <div class="custom-card plus-next">
-                                        <div class="transfers-card">
-                                            <img class="img-fluid" src="img/icons/meals.png" alt="">
+                                        <!-- rest -->
+                                        <div class="custom-card plus-next">
+                                            <p class="text-center fw-bold">Fly to your next destination</span>
+                                            </p>
                                         </div>
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <div class="w-75">
-                                                <h5 class="text-truncate">Breakfast at Hotel</h5>
-                                                <p class="travel-date">Fri, 03 Mar 2023</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- transfers -->
-                                    <div class="custom-card plus-next">
-                                        <div class="transfers-card">
-                                            <img class="img-fluid" src="img/icons/taxi.png" alt="">
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <div class="w-75">
-                                                <h5 class="text-truncate">Transfer Hotel to Airport</h5>
-                                                <p class="travel-date">Fri, 03 Mar 2023</p>
-                                            </div>
-                                            <button class="outline-btn">
-                                                Change to Private
-                                            </button>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img class="img-fluid" src="img/transfer-img.jpg" alt="">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul class="list-inline daywise-des">
-                                                    <li>Private transfer</li>
-                                                    <li>2 Passengers in 1 vehicle</li>
-                                                    <li>Pickup from Airport</li>
-                                                    <li>Drop at Hotel</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- rest -->
-                                    <div class="custom-card plus-next">
-                                        <p class="text-center fw-bold">Fly to your next destination</span>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Price Summary -->
                 <div class="col-md-3">
-                    <div class="custom-card position-sticky top-0">
-                        Price Summary
+                    <div class="custom-card p-2 position-sticky" style="top: 1rem;">
+                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <div>
+                                <small>Price for 3 Persons</small>
+                                <div class="total-price">
+                                    &#8377;78,999
+                                </div>
+                            </div>
+                            <button class="book-now" onclick="document.location='/package-review.html'">Book
+                                Now</button>
+                        </div>
+                        <div class="price-breakup">
+                            <div class="breakup-dtls">
+                                <p>Package Cost</p>
+                                <p class="total-cost">&#8377;15,999</p>
+                            </div>
+                            <div class="breakup-dtls">
+                                <p>GST</p>
+                                <p class="total-cost">&#8377;999</p>
+                            </div>
+                            <div class="breakup-dtls">
+                                <p>Payable Amount</p>
+                                <p class="total-cost">&#8377;78,999</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button class="callback-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill-rule="evenodd" clip-rule="evenodd">
+                                    <path
+                                        d="M3.848 19h-.848c-.796 0-1.559-.316-2.121-.879-.563-.562-.879-1.325-.879-2.121v-3c0-7.175 5.377-13 12-13s12 5.825 12 13v3c0 .796-.316 1.559-.879 2.121-.562.563-1.325.879-2.121.879h-.848c-2.69 4.633-6.904 5-8.152 5-1.248 0-5.462-.367-8.152-5zm16.152-5.876c-.601.236-1.269-.18-1.269-.797 0-.304-.022-.61-.053-.915-1.761-.254-3.618-1.926-3.699-3.723-1.315 2.005-4.525 4.17-7.044 4.17 1.086-.699 1.839-2.773 1.903-3.508-.581 1.092-2.898 3.136-4.551 3.487l-.018.489c0 .619-.669 1.032-1.269.797v3.771c.287.256.632.464 1.041.594.225.072.412.224.521.424 2.206 4.046 5.426 4.087 6.438 4.087.929 0 3.719-.035 5.877-3.169-1.071.433-2.265.604-3.759.653-.37.6-1.18 1.016-2.118 1.016-1.288 0-2.333-.784-2.333-1.75s1.045-1.75 2.333-1.75c.933 0 1.738.411 2.112 1.005 1.9-.026 4.336-.334 5.888-2.645v-2.236zm-11-.624c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm6 0c.686 0 1.243.672 1.243 1.5s-.557 1.5-1.243 1.5-1.243-.672-1.243-1.5.557-1.5 1.243-1.5zm5.478-1.5h1.357c-.856-5.118-4.937-9-9.835-9-4.898 0-8.979 3.882-9.835 9h1.357c.52-4.023 3.411-7.722 8.478-7.722s7.958 3.699 8.478 7.722z" />
+                                </svg>
+                                Call Back</button>
+                            <button class="add-journey-btn">
+                                <img class="img-fluid" src="img/icons/plan-your-journey.png" alt="">
+                                Add to Journey</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Hotel Details Slide Out -->
+    <div class="position-relative">
+        <div id="SlideLeft" class="slide-out">
+            <button class="slides-close close-btn">
+                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    style="width: 30px; height: 30px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+                </svg>
+            </button>
+            <div class="scrollbarChrome" style="height: 100vh; overflow: auto;">
+                <div class="container">
+                    <h5 class="fw-bolder mb-4">Hotel Details</h5>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-fluid"
+                                src="https://cdn.dpauls.com/public/images/packages/thailand/pattaya/coral-island-tour-pattaya-thailand.jpg"
+                                alt="">
+                            <img class="img-fluid"
+                                src="https://cdn.dpauls.com/public/images/packages/thailand/phuket/two-brown-boats-on-the-beach-phuket-thailand.jpg"
+                                alt="">
+
+                        </div>
+                        <div class="col-md-3">
+                            <img class="img-fluid"
+                                src="https://cdn.dpauls.com/public/images/packages/thailand/bangkok/chao-phraya-river-cruise-bangkok-thailand.jpg"
+                                alt="">
+                            <img class="img-fluid"
+                                src="https://cdn.dpauls.com/public/images/packages/thailand/pattaya/coral-island-tour-pattaya-thailand.jpg"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5 class="fw-bolder text-truncate">Club Bamboo Boutique Resort & Spa</h5>
+                        <p class="htl-address text-truncate"><img class="img-fluid" style="height: 18px;"
+                                src="img/icons/location.png" alt=""> <span>247, 1-8
+                                Nanai Rd, Pa
+                                Tong, Amphoe Kathu, Phuket
+                                83150, Thailand</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay-bg"></div>
+    </div>
+
+    <!-- Change Hotel Slide Out -->
+    <div class="position-relative">
+        <div id="SlideLeft-Hotel" class="slide-out">
+            <button class="slides-close close-btn">
+                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+                    style="width: 30px; height: 30px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+                </svg>
+            </button>
+            <div class="scrollbarChrome" style="height: 100vh; overflow: auto;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="change-hotel-wrap">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="w-75">
+                                        <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
+                                        <p class="htl-address text-truncate"><img class="img-fluid"
+                                                style="height: 16px;" src="img/icons/location.png" alt="">
+                                            <span>247, 1-8 Nanai Rd, Pa
+                                                Tong, Amphoe Kathu, Phuket
+                                                83150, Thailand</span>
+                                        </p>
+                                    </div>
+
+                                    <button id="change-hotel" class="outline-btn">
+                                        Select
+                                    </button>
+                                </div>
+                                <div class="row gx-3">
+                                    <div class="col-md-3">
+                                        <div class="act-img-wrap">
+                                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="list-inline">
+                                            <li>Check-in to Hotel <span>@2PM</span></li>
+                                            <li>Star Category:
+                                                <span class="star-rating">
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                </span>
+                                            </li>
+                                            <li>Room Category: <span>Superior Room</span></li>
+                                            <li>Meal Plan: <span>Breakfast</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="change-hotel-wrap">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="w-75">
+                                        <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
+                                        <p class="htl-address text-truncate"><img class="img-fluid"
+                                                style="height: 16px;" src="img/icons/location.png" alt="">
+                                            <span>247, 1-8 Nanai Rd, Pa
+                                                Tong, Amphoe Kathu, Phuket
+                                                83150, Thailand</span>
+                                        </p>
+                                    </div>
+
+                                    <button id="change-hotel" class="outline-btn">
+                                        Select
+                                    </button>
+                                </div>
+                                <div class="row gx-3">
+                                    <div class="col-md-3">
+                                        <div class="act-img-wrap">
+                                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="list-inline">
+                                            <li>Check-in to Hotel <span>@2PM</span></li>
+                                            <li>Star Category:
+                                                <span class="star-rating">
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                </span>
+                                            </li>
+                                            <li>Room Category: <span>Superior Room</span></li>
+                                            <li>Meal Plan: <span>Breakfast</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="change-hotel-wrap">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="w-75">
+                                        <h5 class="text-truncate">Club Bamboo Boutique Resort & Spa</h5>
+                                        <p class="htl-address text-truncate"><img class="img-fluid"
+                                                style="height: 16px;" src="img/icons/location.png" alt="">
+                                            <span>247, 1-8 Nanai Rd, Pa
+                                                Tong, Amphoe Kathu, Phuket
+                                                83150, Thailand</span>
+                                        </p>
+                                    </div>
+
+                                    <button id="change-hotel" class="outline-btn">
+                                        Select
+                                    </button>
+                                </div>
+                                <div class="row gx-3">
+                                    <div class="col-md-3">
+                                        <div class="act-img-wrap">
+                                            <img class="img-fluid" src="img/Club-Bamboo-Boutique.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="list-inline">
+                                            <li>Check-in to Hotel <span>@2PM</span></li>
+                                            <li>Star Category:
+                                                <span class="star-rating">
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z"
+                                                            fill-rule="nonzero" />
+                                                    </svg>
+                                                </span>
+                                            </li>
+                                            <li>Room Category: <span>Superior Room</span></li>
+                                            <li>Meal Plan: <span>Breakfast</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay-bg"></div>
+    </div>
 
 
     <!-- footer -->
@@ -813,6 +1169,38 @@
                 // $('#item').css({'color':'red','background':'blue'}); 
             });
         });
+
+        // Open hotel details
+        $(document).ready(function ()
+        {
+            $("#hotelDetails").click(function ()
+            {
+                $("#SlideLeft").toggleClass("open");
+                $("#overlay").toggleClass("open");
+
+            });
+
+            $(".close-btn").click(function ()
+            {
+                $("#SlideLeft").removeClass("open");
+                $("#overlay").removeClass("open");
+                $("#SlideLeft-Hotel").removeClass("open");
+                $("#overlay").removeClass("open");
+
+            });
+        });
+
+        // Change hotel
+        $(document).ready(function ()
+        {
+            $("#change-hotel").click(function ()
+            {
+                $("#SlideLeft-Hotel").toggleClass("open");
+                $("#overlay").toggleClass("open");
+
+            });
+        });
+
 
 
 
