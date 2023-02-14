@@ -84,7 +84,7 @@
     position: absolute;
     bottom: 6px;
     left: 50%;
-    color: #808080;
+    color: var(--orange);
     transform: translateX(-50%);
     font-size: var(--fnt-10);
     line-height: 0.625rem;

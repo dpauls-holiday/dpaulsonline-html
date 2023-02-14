@@ -22,6 +22,7 @@
         rel="stylesheet" />
 
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -559,7 +560,7 @@
                                     <label for="">Select your Check-in Date:</label>
 
                                     <div class="custom-control">
-                                        <div class="d-flex align-items-center w-50">
+                                        <div class="d-flex align-items-center w-50" id="dateCalendar">
                                             <img src="img/icons/calendar.png" class="img-fluid" alt="">
                                             <input type="text" class="form-control border-0 border-end rounded-0"
                                                 placeholder="01 Mar 2023">
@@ -890,7 +891,7 @@
                                             &#8377;48,996
                                         </div>
                                     </div>
-                                    <button onclick="document.location='/package-review.html'" class="book-now">Book
+                                    <button onclick="document.location='package-review.html'" class="book-now">Book
                                         Now</button>
                                 </div>
                                 <div class="price-breakup">
@@ -1032,6 +1033,334 @@
                         </div>
                         <div id="overlay" class="overlay-bg"></div>
                     </div>
+
+                    <!-- calendar slide out -->
+                    <section>
+                        <div id="SlideLeft" class="slide-out calendar_out">
+                            <button class="slides-close close-btn">
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                    stroke-miterlimit="2" style="width: 30px; height: 30px;" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+                                </svg>
+                            </button>
+                            <div class="vdp-datepicker__calendar scrollbarChrome">
+                                <div class="vdp-datepicker__calendar-head overflow-hide">
+                                    <div class="month_block">
+                                        <header class="w-100 fw-bold text-center">February 2023
+                                        </header>
+                                        <div class=""><span class="cell day-header">Sun</span>
+                                            <span class="cell day-header" style="float: left;">Mon</span> <span
+                                                class="cell day-header" style="float: left;">Tue</span> <span
+                                                class="cell day-header" style="float: left;">Wed</span>
+                                            <span class="cell day-header" style="float: left;">Thu</span> <span
+                                                class="cell day-header" style="float: left;">Fri</span> <span
+                                                class="cell day-header" style="float: left;">Sat</span>
+                                            <span class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"><span>
+                                                    1
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    2
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    3
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    4
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    5
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    6
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    7
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"><span>
+                                                    8
+                                                </span></span><span class="cell day selected"
+                                                style="float: left;"><span><span class="fare">&#8377;5399</span>
+                                                    9
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4202</span>
+                                                    10
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4152</span>
+                                                    11
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4199</span>
+                                                    12
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4199</span>
+                                                    13
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4050</span>
+                                                    14
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4096</span>
+                                                    15
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4055</span>
+                                                    16
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    17
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4201</span>
+                                                    18
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    19
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4200</span>
+                                                    20
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4234</span>
+                                                    21
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4199</span>
+                                                    22
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4096</span>
+                                                    23
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4201</span>
+                                                    24
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4201</span>
+                                                    25
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4306</span>
+                                                    26
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4306</span>
+                                                    27
+                                                </span></span><span class="cell day" style="float: left;"><span
+                                                    data-v-209beca9=""><span class="fare">&#8377;4404</span>
+                                                    28
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="month_block">
+                                        <header class="w-100 fw-bold text-center">March 2023</header>
+                                        <div class="ml-1"><span class="cell day-header">Sun</span> <span
+                                                class="cell day-header" style="float: left;">Mon</span> <span
+                                                class="cell day-header" style="float: left;">Tue</span> <span
+                                                class="cell day-header" style="float: left;">Wed</span>
+                                            <span class="cell day-header" style="float: left;">Thu</span> <span
+                                                class="cell day-header" style="float: left;">Fri</span> <span
+                                                class="cell day-header" style="float: left;">Sat</span>
+                                            <span class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    1
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4123</span>
+                                                    2
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    3
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    4
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    5
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    6
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4099</span>
+                                                    7
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4136</span>
+                                                    8
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4202</span>
+                                                    9
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    10
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4043</span>
+                                                    11
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    12
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    13
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    14
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    15
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3909</span>
+                                                    16
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4055</span>
+                                                    17
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    18
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    19
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    20
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    21
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    22
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    23
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    24
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    25
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    26
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    27
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    28
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    29
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4569</span>
+                                                    30
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;6059</span>
+                                                    31
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="month_block">
+                                        <header class="w-100 fw-bold text-center">April 2023</header>
+                                        <div class="ml-1"><span class="cell day-header">Sun</span> <span
+                                                class="cell day-header" style="float: left;">Mon</span> <span
+                                                class="cell day-header" style="float: left;">Tue</span> <span
+                                                class="cell day-header" style="float: left;">Wed</span>
+                                            <span class="cell day-header" style="float: left;">Thu</span> <span
+                                                class="cell day-header" style="float: left;">Fri</span> <span
+                                                class="cell day-header" style="float: left;">Sat</span>
+                                            <span class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day blank old-dt" style="float: left;"></span><span
+                                                class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    1
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4123</span>
+                                                    2
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    3
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    4
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    5
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    6
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4099</span>
+                                                    7
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4136</span>
+                                                    8
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4202</span>
+                                                    9
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    10
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4043</span>
+                                                    11
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    12
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    13
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    14
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    15
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3909</span>
+                                                    16
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4055</span>
+                                                    17
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    18
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    19
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    20
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4086</span>
+                                                    21
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4139</span>
+                                                    22
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    23
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    24
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    25
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    26
+                                                </span></span><span class="cell day" style="float: left;"><span>
+                                                    27
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4349</span>
+                                                    28
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;3993</span>
+                                                    29
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;4569</span>
+                                                    30
+                                                </span></span><span class="cell day" style="float: left;"><span><span
+                                                        class="fare">&#8377;6059</span>
+                                                    31
+                                                </span></span><span class="cell day blank old-dt"
+                                                style="float: left;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="overlay" class="overlay-bg"></div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -1161,6 +1490,25 @@
             {
                 $("#journey-cart").toggleClass("open");
             });
+        });
+
+        // calendar modal
+        $(document).ready(function ()
+        {
+            $("#dateCalendar").click(function ()
+            {
+                $("#SlideLeft").toggleClass("open");
+                $("#overlay").toggleClass("open");
+
+            });
+
+            $(".close-btn").click(function ()
+            {
+                $("#SlideLeft").removeClass("open");
+                $("#overlay").removeClass("open");
+
+            });
+
         });
 
         // Room and Pax Selection
